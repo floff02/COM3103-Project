@@ -1,0 +1,173 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+  background-image: linear-gradient(#B1F0EF, #4379A2);
+}
+ul { /*This styles the list within the navigation bar, it removes all text decoration such as standard hyperlink styles like underlining and the text being blue, is changes the display to be inline with other content in the division such as the Burger King logo and not underneath the BK logo, and changes the cursor when the cursor is hovered over it to a pointer instead of a text highlighter*/
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 2em;
+  cursor: pointer;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+li a { /*This styles the the physical text in the navigation bar, changing the font size, the weight of the text making it bold, and changes the font family, as well as making the text black which makes it easier to see on the white background*/
+  margin: 30px;
+  padding: 20px;
+  text-decoration: none;
+  line-height: 4em;
+  font-family: georgia;
+  font-size: 1em;
+  color: white;
+  font-weight: bolder;
+  border: 2px solid white;
+  
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+}
+li a:hover {/*This changes the colour of the naivgation bar text when the cursor is hovered over it from black to grey*/
+  color: #957BA6;
+  border: 2px solid white;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.2);
+}
+li c { /*This styles the the physical text in the navigation bar, changing the font size, the weight of the text making it bold, and changes the font family, as well as making the text black which makes it easier to see on the white background*/
+  margin: 30px;
+  padding: 20px;
+  text-decoration: none;
+  line-height: 4em;
+  font-family: georgia;
+  font-size: 1em;
+  color: white;
+  font-weight: bolder;
+  border: 2px solid white;
+  
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+}
+li c:hover {/*This changes the colour of the naivgation bar text when the cursor is hovered over it from black to grey*/
+  color: #957BA6;
+  border: 2px solid white;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.2);
+}
+
+li {/*This makes the unorderlist float from top to bottom, to left to right, making the navigation bar more appealing, easy to use and less clunky*/
+  float: left;
+}
+
+.Navigation_Bar {/*This section sets the physical box of the navigation bar, as well as setting its position to fixed, which means that as the user scrolls down the webpage the navigation bar stays at the top of the screen at all times, making the user able to navigate the website much easier*/
+  height: 10em;
+  width: 100%;
+  display: inline-block;
+  position: fixed;
+  background-color: #4379A2;
+  top: 0;
+  z-index: 2;
+}
+
+.TSA_Logo { /*within the navigation bar, the logo is also fixed to the top of the screen, and has its physical dimensions fixed*/
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  padding-left: 30px;
+}
+.Left_Nav {
+  display: inline-block;
+  margin-left: 21%;
+}
+* {
+  box-sizing: border-box;
+}
+.imgscroll {
+  height: 50%;
+  padding-top: 10em;
+}
+.bg-image {
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img1 { background-image: url("Images/sea_waste_img1.png"); }
+.img2 { background-image: url("Images/sea_waste_img2.png"); }
+.img3 { background-image: url("Images/sea_waste_img3.png"); }
+.img4 { background-image: url("Images/sea_waste_img4.png"); }
+.img5 { background-image: url("Images/sea_waste_img5.png"); }
+
+.bg-text {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: flex;
+  padding-top: 600px;
+  padding-bottom: 100px;
+}
+
+div.column{
+  width: 50%;
+  
+}
+
+.column h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Tahoma;
+}
+.column h3{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Tahoma;
+}
+.column p1{
+  text-align: center;
+  margin-left: 12.5%;
+  width: 75%;
+  display: inline-block;
+  font-size: 20px;
+  font-family: Tahoma;
+  border-top: 3px solid black;
+  padding-top: 25px;
+  border-bottom: 3px solid black;
+  padding-bottom: 25px;
+}
+
+.column p2{
+  text-align: center;
+  margin-left: 12.5%; 
+  width: 75%;
+  display: inline-block;
+  font-size: 20px;
+  font-family: Tahoma;
+  border-top: 3px solid black;
+  padding-top: 25px;
+  border-bottom: 3px solid black;
+  padding-bottom: 30px;
+}
+.column img{
+  display: flex;
+  margin-left: 20%;
+  padding-top: 50px;
+}
